@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="title">Password Generator</p>
+            <div class="form">
+                <input type="text" readonly placeholder="Password" id="pass">
+                <i class="fa-regular fa-file copy" style="cursor: pointer;"></i>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="len">
+                    <pre>Charactor Length</pre>
+                    <p id="value">0</p>
+                </div>
+                <div class="range">
+                    <input type="range" value="0" onpointermove="Execute()" min="0" max="30"  id="range" class="range-i">
+                </div>
+            </div>
+        
+            <div class="check">
+                <input type="checkbox" name="" id="check1">
+                <label for="check1">Number</label>
+            </div>
+            <div class="check"></div>
+            <div class="check"></div>
+            <br>
+           
+        </div>
+        
+        <button class="button" id="btn">Generate</button>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
